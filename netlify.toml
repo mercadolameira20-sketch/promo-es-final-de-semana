@@ -1,0 +1,10 @@
+# Garante que o navegador sempre busque a versão mais recente
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "no-cache, must-revalidate"
+
+[[headers]]
+  for = "/encartes/*"
+  [headers.values]
+    Cache-Control = "no-store, max-age=0"
